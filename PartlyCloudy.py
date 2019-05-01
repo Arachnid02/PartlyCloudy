@@ -17,6 +17,12 @@ window = GraphWin("Partly Cloudy", 1000, 800)
 window.setCoords(0, 0, 1000, 800)
 window.setBackground(color_rgb(134, 206, 250))
 
+#sun
+sun = Oval(Point(850, 770), Point(950,670))
+sun.setFill(color_rgb(255,255,0))
+sun.setOutline(color_rgb(255, 255, 0))
+sun.draw(window)
+
 #grass
 grass = Rectangle(Point(0, 0), Point(1000, 200))
 grass.setFill(color_rgb(0, 55, 0))
@@ -32,6 +38,6 @@ hill.draw(window)
 for i in range(100):
     cloudX = randint(0, 1000)
     cloudY = randint(600, 800)
-    cloudRadius = randint(1, 7)
+    cloudRadius = randint(1, 5)
     cloudColor = "White"
     draw_clouds(cloudX, cloudY, cloudRadius, cloudColor, window)

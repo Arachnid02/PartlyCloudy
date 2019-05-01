@@ -32,6 +32,6 @@ hill.draw(window)
 for i in range(100):
     cloudX = randint(0, 1000)
     cloudY = randint(600, 800)
-    cloudRadius = randint(1, 5)
+    cloudRadius = randint(1, 7)
     cloudColor = "White"
     draw_clouds(cloudX, cloudY, cloudRadius, cloudColor, window)
